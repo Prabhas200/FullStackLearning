@@ -160,3 +160,70 @@ console.log(person5);
 person5.greet();
 console.log(person5);
 
+
+
+
+// data types in js:
+// primitive data types: string, number, boolean, null, undefined, symbol and bigint are the primitive data types in js. primitive data types are immutable and passed by value. (7 primitive data types)
+// primitive data types are immutable and passed by value. non-primitive data types are mutable and passed by reference.
+
+// string: a sequence of characters
+// number: a number
+// boolean: true or false
+// null: null
+// undefined: undefined
+// symbol: a unique identifier
+// bigint: a large integer
+
+
+// non-primitive data types: object, array, function, date, regExp, error and proxy object are the non-primitive data types in js. non-primitive data types are mutable and passed by reference. (6 non-primitive data types)
+//non-primitive data types are mutable and passed by reference. primitive data types are immutable and passed by value.
+
+// object: a collection of key value pairs
+const student={
+    name:"john",
+    age:30,
+    isMarried:true,
+    children:["jane","joe"],
+    address:{
+        street:"123 main st",
+        city:"new york",
+        state:"ny",
+        zip:"10001"
+    }
+};
+console.log(student);
+console.log(student.name);
+console.log(student["name"]);
+console.log(student.address.city);
+
+
+// assignment: create a profile object with the following properties: name, age, username, isfollow, followers, following, posts, about, website. print the profile object and its type. print the type of the username property.
+
+const profile={
+    name:"john",
+    age:30,
+    username:"johndoe",
+    isfollow:true,
+    followers:1000,
+    following:500,
+    posts:100,
+    about:"I am a software engineer",
+    website:"https://www.johndoe.com"
+}
+console.log(profile);
+console.log(typeof profile);
+console.log(typeof profile['username']);
+
+
+// array: a collection of elements
+// function: a collection of statements that can be called
+// date: a collection of elements
+// regExp: a collection of elements
+// error: a collection of elements
+// proxy object: a collection of elements
+
+
+
+
+
