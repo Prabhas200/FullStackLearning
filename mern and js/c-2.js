@@ -98,11 +98,14 @@ switch (x) {
     case 30:
         console.log("x is 30");
         break;
+    case 40:
+        console.log("x is 40");
+        break;
     // case 32:
     //     console.log("x is 32");
     //     break;
     default:
-        console.log("x is not 10, 20 or 30");
+        console.log("x is not 10, 20, 30 or 40");
         break;
 }
 
@@ -137,8 +140,105 @@ else {
 
 
 // ternary operator: ? is used to assign a value to a variable based on a condition
+// a?b:c; // if a is true, b is assigned to c, otherwise c is assigned to c
+
+let annie=23;
+let result=annie>=18? "You are eligible to vote" : "You are not eligible to vote";
+console.log(result);
+
+let age=20;
+let result1=age<=18? console.log("You are eligible to vote") : console.log("You are not eligible to vote");
 
 
 // null coalescing operator: ?? is used to assign a value to a variable if it is null or undefined
+
+
+// assignment:
+
+// get user to input their name and age and store it in a variable. If the user does not input their name or age, assign a default value to the variable using the null coalescing operator.
+
+// let userName = prompt("Please enter your name:") ?? "Default Name: John Doe";
+// let userAge = prompt("Please enter your age:") ?? "Default Age: 30";
+// console.log("Name:", userName);
+// console.log("Age:", userAge);
+
+// let name=prompt("Enter your name");
+// let age=prompt("Enter your age");
+// let result=name ?? "John Doe";
+// let result1=age ?? 30;
+// console.log(result);
+// console.log(result1);
+
+// var fullname="john doe";
+// var age=30;
+// var result=fullname ?? "John Doe";
+// var result1=age ?? 30;
+// console.log(result);
+// console.log(result1);
+
+// const name="john";
+// const age=30;
+// const result2=name ?? "John Doe";
+// const result3=age ?? 30;
+// console.log(result2);
+// console.log(result3);
+
+
+
+//get user to input a number using prompt and store it in a variable. check if the number multiplied by 2 or not.
+
+// alert("hello world");
+
+let number=prompt("Please enter a number:");
+let multiplied=number*2;
+if (multiplied>10) {
+    console.log("The number multiplied by 2 is greater than 10");
+}
+else {
+    console.log("The number multiplied by 2 is not greater than 10");
+}
+
+
+// write a code that takes a number as input and checks if it is even or odd using the ternary operator. If the number is even, print "The number is even", otherwise print "The number is odd".
+
+let num=prompt("Please enter a number:");
+let result2=num%2===0? "The number is even" : "The number is odd";
+console.log(result2);
+
+
+
+// write a code which can give grades to students according to theirs scores:
+// 80-100, A
+// 60-79, B 
+// 40-59, C
+// 20-39, D
+// 0-19, E 
+
+let score=prompt("Please enter your score:");
+let result3=score>=85? "A" : score>=60? "B" : score>=40? "C" : score>=20? "D" : score>=1? "E" : "F";
+console.log(result3);
+
+// or
+
+let score1=prompt("Please enter your score:");
+if (score1>=80 && score1<=100) {
+    console.log("A");
+}
+else if (score1>=60 && score1<=79) {
+    console.log("B");
+}
+else if (score1>=40 && score1<=59) {
+    console.log("C");
+}
+else if (score1>=20 && score1<=39) {
+    console.log("D");
+}
+else if (score1>=1 && score1<=19) {
+    console.log("E");
+}
+else {
+    console.log("F");
+}
+console.log(result4);
 
 
