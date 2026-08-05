@@ -69,11 +69,12 @@ console.log(5<=4); // false
 
 
 if (x>30) {
-    console.log("x is greater than 30");
+    a="x is greater than 30";
 }
 else {
-    console.log("x is not greater than 30");
+    a="x is not greater than 30";
 }
+console.log("The value of a is:",a);
 
 
 if (x>40) {
