@@ -277,5 +277,5 @@ console.log(str);
 
 let name = prompt("Please enter your name:");
 
-let username = '@' + prompt("Please enter your username:") + '20';
+let username = '@' + prompt("Please enter your username:") + name.length;
 console.log(username);
