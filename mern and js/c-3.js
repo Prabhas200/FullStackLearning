@@ -157,8 +157,6 @@ console.log("congrats you won");
 
 
 
-
-
 // forEach loop: let arr = [1, 2, 3]; arr.forEach(function(value) { console.log(value); });
 
 
@@ -179,25 +177,105 @@ console.log("congrats you won");
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // strings: strings are sequences of characters that can be used to represent text, numbers and symbols
 
 // string methods: length, charAt, charCodeAt, concat, indexOf, lastIndexOf, slice, substr, substring, split, replace, toLowerCase, toUpperCase, trim and trimStart are used to manipulate strings
 
-// string properties: length, charAt, charCodeAt, concat, indexOf, lastIndexOf, slice, substr, substring, split, replace, toLowerCase, toUpperCase, trim and trimStart are used to manipulate strings
+let str= 'hello world';
+
+console.log(str.length);
+console.log(str.charAt(0));
+console.log(str.charCodeAt(0));
+console.log(str.concat('hello'));
+console.log(str.indexOf('l'));
+console.log(str.lastIndexOf('l'));
+console.log(str.slice(0,5));
+console.log(str.substr(0,5));
+console.log(str.substring(0,5));
+console.log(str.split(' '));
+console.log(str.replace('hello', 'hi'));
+console.log(str.toLowerCase());
+console.log(str.toUpperCase());
+console.log(str.trim());
+console.log(str.trimStart());
+
+// in this string we have inbuilt properties and (inbuilt functions - known as methods)
+
+str.length;
+str.charAt(0);
+str.charCodeAt(0);
+str.concat('hello');
+str.indexOf('l');
+str.lastIndexOf('l');
+str.slice(0,5);
+str.substr(0,5);
+str.substring(0,5);
+str.split(' ');
+str.replace('hello', 'hi');
+str.toLowerCase();
+str.toUpperCase();
+str.trim();
+str.trimStart();
+
+
+// template literals: are used to create strings that contain variables and expressions, backticks are used to create template literals
+
+let name = 'John';
+let age = 30; 
+
+console.log(`My name is ${name} and I am ${age} years old`); // ` ` we use to create template literals and ${name} and ${age} are variables that are used to create template literals by using placeholder.
+
+// escape characters are used to escape special characters in a string.
+
+let str = 'hello\nworld';
+console.log(str);
+
+let str = 'hello\tworld';
+console.log(str);
+
+let str = 'hello\\world';
+console.log(str);
+
+let str = 'hello\'world';
+console.log(str);
+
+let str = 'hello\"world';
+console.log(str);
+
+let str = 'hello\aworld';
+console.log(str);
+
+let str = 'hello\bworld';
+console.log(str);
+
+let str = 'hello\fworld';
+console.log(str);
+
+let str = 'hello\rworld';
+console.log(str);
+
+let str = 'hello\vworld';
+console.log(str);
+
+let str = 'hello\oworld';
+console.log(str);
+
+let str = 'hello\sworld';
+console.log(str);
+
+let str = 'hello\zworld';
+console.log(str);
+
+let str = 'hello\x77orld';
+console.log(str);
+
+
+
+
+// assignment:
+// create a template literal that concatenates the username and the length of the username or Write a JavaScript program that generates a customized username handle based on user input.
+
+let name = prompt("Please enter your name:");
+
+let username = '@' + prompt("Please enter your username:") + '20';
+console.log(username);
