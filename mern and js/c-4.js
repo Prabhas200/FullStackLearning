@@ -146,3 +146,106 @@ for (let i = 0; i < arr.length; i++) {
 
 console.log(arr); 
 // Output: [237.5, 475, 712.5, 950, 1187.5]
+
+
+
+
+
+// array methods: this is a collection of functions that can be used to manipulate arrays in javascript
+
+
+// push, pop, shift, unshift, splice, slice, sort, reverse and map
+
+
+let food= ["pizza", "pasta", "burger"];
+
+
+
+let a=food.shift(); // this will remove the first element of the array and return it and also it stores the removed element and  prints the it.
+console.log(a);
+
+let b=food.unshift("chicken"); // this will add chicken to the beginning of the array and return the length of the array and it stores and prints the length of the array
+console.log(b);
+
+
+
+food.push("chicken"); // this will add chicken to the end of the array
+console.log(food); // this will print the array original values
+console.log(food.toString()); // this will print the array as a string
+console.log(typeof food); // this will print the type of the array as an object
+console.log(typeof food.toString()); // this will print the type of the array as a string
+
+
+food.pop(); // this will remove the last element of the array
+console.log(food);
+
+food.shift(); // this will remove the first element of the array
+console.log(food);
+
+food.unshift("chicken"); // this will add chicken to the beginning of the array
+console.log(food);
+
+
+console.log(food.slice(1, 2)); // this will print the second element of the array and it will not include the second element of the array
+
+
+food.splice(1, 1); // this will remove the second element of the array
+console.log(food);
+
+food.splice(1, 1, "chicken"); // this will remove the second element of the array and add chicken to the second element of the array
+console.log(food);
+
+food.splice(1, 0, "goat"); // this will add chicken to the second element of the array
+console.log(food);
+
+
+
+
+food.splice(1, 1, "chicken"); // this will add chicken to the second element of the array
+console.log(food);
+food.splice(1, 2, "chicken"); // this will add chicken to the second element of the array
+console.log(food);
+food.splice(1, 0, "chicken"); // this will add chicken to the second element of the array
+console.log(food);
+food.splice(1, 1); // this will add chicken to the second element of the array
+console.log(food);
+food.splice(1, 2); // this will add chicken to the second element of the array
+console.log(food);
+
+
+
+
+food.sort(); // this will sort the array in alphabetical order
+console.log(food);
+
+food.reverse(); // this will reverse the array
+console.log(food);
+
+
+
+
+// this will be a higher order function that takes a function as an argument and returns a new array with the same length as the original array.
+
+food.map((item) => console.log(item)); // this will print all the elements of the array in the console in a new line seperately and it will be discused in the function chapter.
+
+
+
+
+// forEach, filter, find, findIndex, some, every, reduce and reduceRight
+// concat, join, slice and split, unshift, shift
+// includes, indexOf and lastIndexOf 
+// map, forEach, filter, find, findIndex, some, every, reduce and reduceRight
+
+//concat method: this method is used to join two or more arrays into a single array and returns a new array
+
+let arr1 = [1, 2, 3];
+let arr2 = [4, 5, 6];
+let arr3 = arr1.concat(arr2);
+console.log(arr3);
+
+
+// join method: this method is used to join the elements of an array into a string and returns a string
+
+let arr = [1, 2, 3,];
+let str = arr.join('-');
+console.log(str);
