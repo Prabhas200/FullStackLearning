@@ -1,24 +1,44 @@
-// assignment: 
-// create a array to store the companies that you have worked for and print the array using for-of loop.
+// u can practice the codes here so it will be a good practice and you can run different codes at a time
 
-let companies = ["company1", "company2", "company3", "company4", "company5"];
-for (let company of companies) {
-    console.log(company);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// function for 2 numbers 
+
+// if we write sum(5,6) it will print 11 in console after running the code as it is.
+function sum(x,y){
+    console.log(x+y);
 }
-console.log(companies);
 
 
-companies.push("company6"); // this will add company6 to the end of the array
-console.log(companies);
+// we can aslo write the return value of th efunction coz we can store the value of the function in a variable and then print the variable.
 
-companies.unshift("company0"); // this will add company0 to the beginning of the array
-console.log(companies);
+function sum(x,y){
+    // s=x+y;
+    // return s;
+    return x+y; // after returning the value of the function it will print the value of the function and also we cant write any code after the return value of the function.
+} // this block of code is a local variable and it will not be accessible outside the function. it will only be accessible inside the function. also known as scoped variable.
+// s=sum(5,6);
+// console.log(s);
+console.log(sum(5,6));
 
-companies.pop(); // this will remove the last element of the array
-console.log(companies);
 
-companies.shift(); // this will remove the first element of the array
-console.log(companies);
+// function parameters are like local variables and they are only accessible inside the function.
+// function arguments are like global variables and they are accessible inside and outside the function.
 
-companies.splice(1, 1, "company7"); // this will remove the second element of the array
-console.log(companies);
+
+
+
+
+
