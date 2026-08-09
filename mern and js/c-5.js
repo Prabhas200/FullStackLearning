@@ -421,7 +421,7 @@ console.log(arr);
 
 
 
-//! very very important
+//? very very important
 
 /* take a number n from the user and create an array from 1 to n 
 - use reduce method to find the sum of the numbers in the array
