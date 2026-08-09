@@ -10,35 +10,50 @@
 
 
 
+/* take a number n from the user and create an array from 1 to n 
+- use reduce method to find the sum of the numbers in the array
+- use reduce method to find the product of the numbers in the array
+- use map method to find the square of the numbers in the array
+- use filter method to find the even numbers in the array */ 
+
+// let n=prompt("Please enter a number:");
+// let arr=new Array(n);
+// for (let i=0; i<n; i++){
+//     arr[i]=i+1;
+// }
+// let sum=arr.reduce((a,b)=>a+b);             // this will find the sum of the numbers in the array by using reduce method
+// let product=arr.reduce((a,b)=>a*b);         // this will find the product of the numbers in the array by using reduce method
+// let square=arr.map((value)=>value*value);   // this will find the square of the numbers in the array by using map method
+// let cube=arr.map((value)=>value*value*value); // this will find the cube of the numbers in the array by using map method
+// let even=arr.filter((value)=>value%2===0);  // this will find the even numbers in the array by using map method
+// let odd=arr.filter((value)=>value%2!==0);   // this will find the odd numbers in the array by using filter method
+// console.log(arr);
+// console.log(sum);
+// console.log(product);
+// console.log(square);
+// console.log(cube);
+// console.log(even);
+// console.log(odd);
 
 
-
-
-// function for 2 numbers 
-
-// if we write sum(5,6) it will print 11 in console after running the code as it is.
-function sum(x,y){
-    console.log(x+y);
+// factorial of a number using for loop
+let n=prompt("Please enter a number:");
+let fact=1;
+for (let i=1; i<=n; i++){
+    fact=fact*i;
 }
+console.log(fact);
+
+// use reduce method to find the factorial of a number
+
+let n = Number(prompt("Enter a number:"));
+let arr = Array.from({ length: n }, (_, i) => i + 1);
+let fact = arr.reduce((a, b) => a * b, 1);
+console.log(fact);
 
 
-// we can aslo write the return value of th efunction coz we can store the value of the function in a variable and then print the variable.
-
-function sum(x,y){
-    // s=x+y;
-    // return s;
-    return x+y; // after returning the value of the function it will print the value of the function and also we cant write any code after the return value of the function.
-} // this block of code is a local variable and it will not be accessible outside the function. it will only be accessible inside the function. also known as scoped variable.
-// s=sum(5,6);
-// console.log(s);
-console.log(sum(5,6));
-
-
-// function parameters are like local variables and they are only accessible inside the function.
-// function arguments are like global variables and they are accessible inside and outside the function.
-
-
-
-
-
-
+let n = Number(prompt("Enter a number:"));
+let arr = [];
+for (let i = 1; i <= n; i++) arr.push(i);
+let fact = arr.reduce((a, b) => a * b, 1);
+console.log(fact);
