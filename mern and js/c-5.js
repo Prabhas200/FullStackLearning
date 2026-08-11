@@ -421,7 +421,7 @@ console.log(arr);
 
 
 
-//? very very important
+//? very very important task
 
 /* take a number n from the user and create an array from 1 to n 
 - use reduce method to find the sum of the numbers in the array
@@ -471,3 +471,20 @@ let arr = [];
 for (let i = 1; i <= n; i++) arr.push(i);
 let fact = arr.reduce((a, b) => a * b, 1);
 console.log(fact);
+
+
+
+
+
+// iife means immediately invoked function expression and it is a function that is called immediately after it is defined
+// iife function: Immediately Invoked Function Expression
+(function(){
+    console.log("Hello world");
+})(); // this will print "Hello world" by using iife function and the output will be "Hello world"
+
+
+// iife function with parameters and arguments by using iife function we can pass arguments to the function
+
+(function(a,b){ // this will print the sum of a and b by using iife function
+    console.log(a+b); // this will print the sum of a and b
+})(10,20); // this will print 30 by using iife function and the output will be 30
